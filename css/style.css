@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.arrow-btn {
+  text-align: center !important;
+  background-color: #F4F7F9;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  color: #111111;
+  text-transform: lowercase;
+  padding: 10px 10px;
+  width: 190px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+  -webkit-box-shadow: 0px 4px 6px #0000001A;
+          box-shadow: 0px 4px 6px #0000001A;
+}
+
+.arrow-btn:hover img {
+  margin-left: 10px;
+}
+
+.arrow-btn img {
+  width: 30px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+header {
+  background-image: url("../img/bannerbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+header .menu-area {
+  border-bottom: solid 0.2px #2A2A2A;
+  height: 80px;
+  background: #1111110D 0% 0% no-repeat padding-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menu-area .container {
+  max-width: 1240px;
+}
+
+header .menu-area .logo img {
+  width: 240px;
+  height: auto;
+}
+
+header .menu-area .menu ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-area .menu ul li {
+  margin-right: 10px;
+}
+
+header .menu-area .menu ul li .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+header .menu-area .menu ul li .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FC466B;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#3F5EFB), to(#FC466B));
+  background: linear-gradient(to right, #3F5EFB, #FC466B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .menu-area .menu ul li .nav-link:hover::after {
+  width: 100%;
+}
+
+header .menu-area .menu ul li .btn {
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  border-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+header .menu-area .menu ul li .btn:hover {
+  background: #1A2268;
+  border-color: #1A2268;
+}
+
+header .banner-area .banner-text {
+  color: #fff;
+}
+
+header .banner-area .banner-text h2 {
+  text-align: left;
+  letter-spacing: 1.2px;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+header .banner-area .banner-text p {
+  text-align: left;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header .banner-area .banner-text .btn {
+  background-color: #F4F7F9;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  color: #111111;
+  text-transform: lowercase;
+  padding: 10px 10px;
+  width: 190px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+  text-align: center;
+}
+
+header .banner-area .banner-text .btn:hover img {
+  margin-left: 10px;
+}
+
+header .banner-area .banner-text .btn img {
+  width: 30px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+header .banner-area .banner-image {
+  margin-top: 80px;
+  text-align: center;
+}
+
+header .banner-area .banner-image img {
+  max-width: 75%;
+}
+
+header .bar {
+  font-size: 25px;
+  color: #fff;
+}
+
+header .mobile-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1A2268D9;
+  height: 100%;
+}
+
+header .mobile-menu .logo img {
+  width: 240px;
+  height: auto;
+}
+
+header .mobile-menu .menu .close-btn {
+  top: 10px;
+  right: 26px;
+  color: #fff;
+  font-size: 25px;
+}
+
+header .mobile-menu .menu ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 80px 0;
+}
+
+header .mobile-menu .menu ul li {
+  margin: 10px 0;
+}
+
+header .mobile-menu .menu ul li .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+header .mobile-menu .menu ul li .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FC466B;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#3F5EFB), to(#FC466B));
+  background: linear-gradient(to right, #3F5EFB, #FC466B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .mobile-menu .menu ul li .nav-link:hover::after {
+  width: 100%;
+}
+
+header .mobile-menu .menu ul li .btn {
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  border-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+header .mobile-menu .menu ul li .btn:hover {
+  background: #1A2268;
+  border-color: #1A2268;
+}
+
+.Description-area {
+  padding-top: 100px;
+}
+
+.Description-area h2 {
+  text-align: left;
+  letter-spacing: 1px;
+  color: #111111;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.Description-area p {
+  text-align: left;
+  letter-spacing: 0.32px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  padding-top: 20px;
+}
+
+.Description-area .social-icon {
+  padding-top: 40px;
+}
+
+.Description-area .social-icon li {
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 4px 6px #0000001A;
+          box-shadow: 0px 4px 6px #0000001A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+.Description-area .social-icon li a {
+  font-size: 22px;
+  color: #888888;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Description-area .social-icon li a:hover {
+  color: #FC466B;
+}
+
+.season-one {
+  padding-top: 80px;
+}
+
+.season-one .top-season-one {
+  background-color: #F4F7F9;
+}
+
+.season-one .top-text h3 {
+  text-align: left;
+  letter-spacing: 1px;
+  color: #111111;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.season-one .top-text h5 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.32px;
+  color: #111111;
+  padding: 10px 0;
+  opacity: 1;
+}
+
+.season-one .top-text h5 span {
+  font-size: 14px;
+}
+
+.season-one .top-text p {
+  padding: 15px 0;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  opacity: 1;
+}
+
+.season-one .card {
+  margin: 0 10px;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 0px 18px 20px #00000008;
+          box-shadow: 0px 18px 20px #00000008;
+}
+
+.season-one .card img {
+  width: 100%;
+  height: 170px;
+}
+
+.season-one .card .card-body {
+  padding-left: 0;
+}
+
+.season-one .card .card-body p {
+  padding-top: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.84px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.season-one .card .card-body .card-title {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1.32px;
+  color: #1E1E1E;
+}
+
+.season-two {
+  padding-top: 80px;
+}
+
+.season-two .top-season-one {
+  background-color: #FBF1F1;
+}
+
+.season-two .top-text h3 {
+  text-align: left;
+  letter-spacing: 1px;
+  color: #111111;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.season-two .top-text h5 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.32px;
+  color: #111111;
+  padding: 10px 0;
+  opacity: 1;
+}
+
+.season-two .top-text h5 span {
+  font-size: 14px;
+}
+
+.season-two .top-text p {
+  padding: 15px 0;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  opacity: 1;
+}
+
+.season-two .card {
+  margin-right: 10px;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 0px 18px 20px #00000008;
+          box-shadow: 0px 18px 20px #00000008;
+}
+
+.season-two .card img {
+  width: 100%;
+  height:170px;
+}
+
+.season-two .card .card-body {
+  padding-left: 0;
+}
+
+.season-two .card .card-body p {
+  padding-top: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.84px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.season-two .card .card-body .card-title {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1.32px;
+  color: #1E1E1E;
+}
+
+footer {
+  height: 76px;
+  background-color: #F4F7F9;
+}
+
+footer p {
+  color: #737373;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+  font-size: 15px;
+  margin: 0;
+}
+
+footer p span {
+  color: #111111;
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    max-width: 1000px;
+  }
+  header {
+    height: 620px;
+  }
+  .season-one .card img {
+    height: 140px;
+  }
+  .season-two .card img {
+    height: 140px;
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    height: 620px;
+  }
+  .container {
+    max-width: 980px;
+  }
+  .season-two .col-md-6 {
+    margin-top: 15px;
+  }
+  .season-one .col-md-6 {
+    margin-top: 15px;
+  }
+  .season-two .card img {
+    height: 100px;
+  }
+  .season-one .card img {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    height: 100%;
+  }
+  .container {
+    max-width: 900px;
+  }
+  .banner-image img {
+    width: 78%;
+  }
+  .Description-area .social-icon {
+    padding: 0;
+  }
+  .Description-area h2 {
+    font-size: 41px;
+  }
+}
+
+@media only screen and (min-width: 908px) {
+  .menu-bar {
+    display: none;
+  }
+  .desktop-menu {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 908px) {
+  .container {
+    max-width: 800px;
+  }
+  header {
+    height: 100%;
+  }
+  .banner-area {
+    padding: 100px 0;
+  }
+  .menu-bar {
+    display: block;
+    color: #fff;
+  }
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  .banner-area {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  .banner-area img {
+    margin: 0;
+  }
+  .banner-image img {
+    width: 100%;
+    max-width: 100% !important;
+  }
+  .Description-area h2 {
+    padding-top: 30px;
+  }
+  .season-one, .season-two, .top-text h5 span {
+    word-break: break-all;
+  }
+  .season-one .card img {
+    height: 170px;
+  }
+  .season-two .card img {
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .menu-area .logo img {
+    width: 150px;
+    height: auto;
+  }
+  .container {
+    max-width: 400px;
+  }
+  header .banner-area .banner-text h2{
+    font-size: 35px;
+  }
+  .season-one {
+    padding-top: 0;
+  }
+  .season-one .top-text h3{
+    font-size: 40px;
+  }
+  .season-two .top-text h3{
+    font-size: 40px;
+  }
+  header .menu-area .logo img {
+    width: 150px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
